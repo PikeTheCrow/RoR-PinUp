@@ -4,7 +4,7 @@
       %h2
       = pluralize(@pin.errors.count, "error")
       prevented this pin from saving
-      %li
+      %ul
         - @pin.errors.full_messages.each do |msg|
           %li= msg
 
